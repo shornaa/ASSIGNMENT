@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Country Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/pages-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <!-- card left -->
+        <div class="country-flags">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img
+                src="./assets/load-loading.gif"
+                id="flag"
+                alt="County Flag"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class="country-details">
+          <h1 class="country-title" id="country">Loading ...</h1>
+          <div class="covid-details">
+            <p class="covid-data" id="case">Cases: <span>Loading ...</span></p>
+            <p class="covid-data" id="death">
+              Deaths: <span>Loading ...</span>
+            </p>
+            <p class="covid-data" id="recover">
+          <!--   Recovered: <span>Loading ...</span>     -->
+            </p>
+          </div>
+
+          <div class="country-info">
+            <ul>
+              <li id="popu">Population: <span>loading ..</span></li>
+              <li id="cap">Capital: <span>loading ..</span></li>
+              <li id="reg">Region: <span>loading ..</span></li>
+              <li id="lang">Languages: <span>loading .. </span></li>
+              <li id="time">Timezones: <span>loading .. </span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/detailsScript.js"></script>
+  </body>
+</html>

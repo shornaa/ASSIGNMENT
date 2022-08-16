@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  body {
+    background-color: #f5f8ff;
+  }
+.wrapper {
+    width: 95%;
+    max-width: 960px;
+    margin: auto;
+    position:absolute;
+    left: 0;
+    top: 25%;
+    right: 0;
+  }
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.country-details{
+    padding: 2rem 1rem;
+}
+.country-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.covid-details{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.covid-details span{
+    font-weight: 400;
+}
+.covid-data span{
+    color: #256eff;
+}
+.country-info h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.country-info p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.country-info ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.country-info ul li{
+    margin: 0;
+    list-style: none;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.country-info ul li span{
+    font-weight: 400;
+}
+
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .country-flags{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .country-details{
+        padding-top: 0;
+    }
+}
